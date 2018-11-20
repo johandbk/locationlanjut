@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".MainActivity">
+
+        //Imageview dengan source gambar diambil dari drawable
+        <ImageView
+            android:id="@+id/imageview_android"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/map"
+            />
+
+        <Button
+            android:id="@+id/button_pilihlocation"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="Pick Location"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/button_location"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        //Button
+        <Button
+            android:id="@+id/button_location"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="Track Location"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textview_location"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        //Textview tempat lokasi yang muncul saat button diklik
+        <TextView
+            android:id="@+id/textview_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:text="Click the button to track the location"
+            />
+
+    </RelativeLayout>
+</ScrollView>
